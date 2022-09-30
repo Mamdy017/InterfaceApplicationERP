@@ -1,0 +1,40 @@
+.contain{
+    max-width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
+}
+.img-fluid{
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+.h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.p{
+    margin-left: 15%;
+    margin-top: -8%;
+}
+.t1{
+    text-align: start; 
+    margin-left: 0%;
+}
+
+ion-icon {
+    color: black;
+}
+main{
+    overflow: scroll;
+}
+.trait{
+    border: 2px solid #FF6600;
+    width: 150px;  
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2%;
+    margin-bottom: 30px;
+    }

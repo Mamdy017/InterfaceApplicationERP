@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" style="position:relative; top:2%; left:90%;"><i
+      class="bi bi-list py-2 p-1 " style="color:black"></i></a>
+  <div class="row flex-nowrap">
+    <div class="col-auto px-2">
+      <app-menu></app-menu>
+    </div>
+    <main class="col ps-md-2 pt-2  " style=" height: 100vh ;">
+      <div class="container">
+        <div class="row boxShadow">
+          <!------------- Colonne Gauche---->
+          <div class="col-12 col-md-2 imgGauche">
+
+            <img src="../../assets/icon/toure.png" alt="image user" class="img-fluid rounded">
+            <p class="profileName">Ousmane <b>TOURE</b></p>
+
+            <div class="row">
+              <p class="py-3" class="titleProfilSettings"><i class="bi bi-gear"></i> Compte</p>
+              <p class="py-3" class="titleProfilSettings2"><i class="bi bi-lock-fill"></i> Mots de passe</p>
+            </div>
+
+
+          </div>
+
+          <!------------- Colonne Droite ---->
+          <div class="col-12 col-md-10">
+            <form>
+              <fieldset>
+                <legend class="display-6 py-4"><b>Paramètres du profil</b></legend>
+              </fieldset>
+              <div class="trait"></div>
+              <div class="row col-12">
+                <div class="mb-3 col-12 col-md-6 form-row ">
+                  <label for="name">Nom</label>
+
+                  <input type="text" name="name" id="name" value="TOURE" class="form form-control inputvalue">
+                </div>
+                <div class="mb-3 col-12 col-md-6 form-row ">
+                  <label for="firstname">Prénom</label>
+                  <input type="text" name="firstname" id="firstname" value="Ousmane"
+                    class="form form-control inputvalue">
+                </div>
+                <div class="mb-3 col-12 col-md-6 form-row ">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" value="Toure@orangemali.com"
+                    class="form form-control inputvalue">
+                </div>
+                <div class="mb-3 col-12 col-md-6 form-row ">
+                  <label for="num">Numéro</label>
+                  <input type="text" name="num" id="num" value="74674384" class="form form-control inputvalue">
+                </div>
+                <div class="mb-3 col-12 col-md-6 form-row ">
+                  <label for="num">Role</label>
+                  <input type="text" name="num" id="num" value="Administrateur" class="form form-control inputvalue"
+                    disabled>
+                </div>
+              </div>
+              <div>
+                <button class="btn btnAjouter">Enregistrer</button>
+                <button class="btn btnAjouter1">Annuler</button>
+              </div>
+
+
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
