@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { AuthentificationService } from '../services/authentification.service';
-import { Utilisateur } from '../Modeles/utilisateur';
+import { AuthentificationService } from '../Services/authentification/authentification.service';
+import { Utilisateur } from '../modeles/utilisateur/utilisateur';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-authentification',
@@ -46,6 +46,8 @@ export class AuthentificationPage implements OnInit {
       this.service.seConnecter(this.email, this.password).subscribe(data => {
         this.connexion = data;
 
+
+
         // console.log("session "+data);
 
         if (this.connexion.email == this.email && this.connexion.password == this.password) {
@@ -66,17 +68,10 @@ export class AuthentificationPage implements OnInit {
             }
             else if (this.typeUser == "admin") {
               this.route.navigateByUrl('/user-accueil');
-
-
-            }else if(data == null){
-              this.erreur = "Mot de passe ou identifiant incorrect"
             }
             else {
-              //this.route.navigateByUrl('h');
-              this.erreur = data.contenu;
-
-              console.log(this.erreur);
-              
+              this.route.navigateByUrl('h');
+              console.log(this.erreur);             
             }
           }
         }
