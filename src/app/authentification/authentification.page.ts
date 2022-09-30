@@ -59,19 +59,24 @@ export class AuthentificationPage implements OnInit {
             sessionStorage.setItem("email_users", data.email);
             sessionStorage.setItem("numero_users", data.numero);
 
+            console.log("______________ "+this.typeUser)
 
             if (this.typeUser == "user") {
-              this.route.navigateByUrl('/accueil-user');
+              this.route.navigateByUrl('/admin-accueil');
             }
             else if (this.typeUser == "admin") {
-              this.route.navigateByUrl('/accueil-admin');
+              this.route.navigateByUrl('/user-accueil');
 
 
             }else if(data == null){
               this.erreur = "Mot de passe ou identifiant incorrect"
             }
             else {
-              this.route.navigateByUrl('h');
+              //this.route.navigateByUrl('h');
+              this.erreur = data.contenu;
+
+              console.log(this.erreur);
+              
             }
           }
         }
@@ -81,7 +86,6 @@ export class AuthentificationPage implements OnInit {
         // ajouter-postulant
         // this.route.navigateByUrl('/ajouter-postulant');accueil-user
         // routerLink="/ajouter-postulant"
-       
 
       })
     }

@@ -1,83 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap%27');
-#sidebar-nav {
-    width: 190px;
-  }
-  *{
-    font-family: 'Poppins', sans-serif;
-  }
-.offcanvas-header img{
-    width: 65%;
+
+*{
+  font-family: 'Poppins', sans-serif;
 }
-    .nav-item img{
-    border-radius: 100%;
-    height: 75px;
-    width: 100px;
 
-  }
-  .active{
-    background-color: white;
-    width: 250px;
-    color:#202020;
-  }
-  .v{
-  width: 250px;
- }
-
-  .nav-item img{
-    border-radius: 100%;
-    height: 60px;
-    width: 60px;
-    padding: 1px;
-  }
-  i,.i{
-    font-size: 18px;
-  }
-  .nom{
-    color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  .ul{
-    border-radius: 0 50px 0 0;
-    position: relative;
-    margin-left: -8%;
-    background-color: #202020;
-
-  }
-  .ul .li:hover{
-    background-color: #FF6600;
-    color:white;
-    width: 200px;
-  }
-  a{
-    color:white;
-  }
-  .tiret{
-    background-color: white;
-    width: 125%;
-  }
-  .nombre {
-    background-color: #FF6600;
-    position: relative;
-    border-radius: 90%;
-    top: 5%;
-    height:15%;
-    left: 5%;
-    width: 30%;
+.alarte{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
-    
-    .nombre b {
-        color:white;
-        position: relative;
-        top: 20%;
-    }
-    // Le debut du media screen
-  @media screen and (max-width:767px) {
-    .ul{
-        width: 200px;
-    }
-    .tiret{
-      display: flex;
-      flex-direction: row;
-    }
-  }
+.cardHome{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+
+}
+.cardHome1{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+.cardCenter{
+  justify-content: space-around;
+}
+.pContent1{
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  top: 15px;
+}
+.pContent2{
+  top: -20px;
+  position: relative;
+}
+.slogan{
+  color: #FF6600;
+  text-align: center;
+  font-size: 1.3rem;
+  position: relative;
+  top: -15px;
+}
+
+.activity{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+* {
+  font-family: 'Poppins' sans-serif;
+}
+
+.boxShadow{
+  padding: 15px;
+}
+.boxShadowArticle{
+  box-shadow: rgba(0, 0, 0, 0.20) 1.95px 1.95px 2.6px;
+  padding-top: 15px;
+}
+.titleSectionActivity{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.actityAVenir{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.dateActivity{
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  top: -10px;
+}
+.pActivityAVenir{
+  position: relative;
+  top: -20px;
+}
+.auteurActivityAVenir{
+  position: relative;
+  font-size: 1rem;
+  top: -30px;
+}
+.boxShadowArticleAVenir{
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.20) 1.95px 1.95px 2.6px;
+  padding-bottom: 0;
+}
