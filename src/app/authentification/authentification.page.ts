@@ -67,6 +67,8 @@ export class AuthentificationPage implements OnInit {
               this.route.navigateByUrl('/accueil-admin');
 
 
+            }else if(data == null){
+              this.erreur = "Mot de passe ou identifiant incorrect"
             }
             else {
               this.route.navigateByUrl('h');
@@ -79,8 +81,7 @@ export class AuthentificationPage implements OnInit {
         // ajouter-postulant
         // this.route.navigateByUrl('/ajouter-postulant');accueil-user
         // routerLink="/ajouter-postulant"
-        this.erreur = data.contenu;
-
+       
 
       })
     }
