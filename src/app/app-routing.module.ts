@@ -70,6 +70,14 @@ const routes: Routes = [
     path: 'salle',
     loadChildren: () => import('./salle/salle.module').then( m => m.SallePageModule)
   },
+  {
+    path: 'reinitialiser-password',
+    loadChildren: () => import('./reinitialiser-password/reinitialiser-password.module').then( m => m.ReinitialiserPasswordPageModule)
+  },
+  {
+    path: 'profil-changer-password',
+    loadChildren: () => import('./profil-changer-password/profil-changer-password.module').then( m => m.ProfilChangerPasswordPageModule)
+  },
 
 ];
 

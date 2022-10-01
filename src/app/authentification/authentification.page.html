@@ -5,12 +5,12 @@
       <div class="col-12 col-md-6 imgGauche">
         <div class="contenu py-5">
           <div class="py-5"></div>
-          <h2 class="display-5 text-center" style="font-weight: bold;">Bienvenue</h2> 
+          <h2 class="display-5 text-center" style="font-weight: bold;">Bienvenue</h2>
           <h6>Sur <span style="color:#FF6600">Orange </span>Digital Center</h6>
         </div>
-        
+
       </div>
-  
+
       <!------------- Colonne Droite ---->
       <div class="col-12 col-md-6 form">
         <form class="py-3 px-3">
@@ -27,19 +27,19 @@
             <div class="mb-3 form-row form-floating">
               <input type="password" name="password" id="password" placeholder="Mots de passe *" class="form form-control inputvalue" [(ngModel)]="password">
               <label for="password">Mot de passe <span style="color:red;">*</span></label>
-              <p class="my-3">Mots de passe oublié ?<span style="color:#FF6600; cursor:pointer"> Oui</span></p>
+              <p class="my-3">Mots de passe <span style="color:#FF6600; cursor:pointer"> oublié</span> ?</p>
               <span class="erreur px-4 w-100" *ngIf="bool_erreur" >
                 {{erreur}}
               </span>
             </div>
-           
+
           </div>
 
-          
+
 
           <button (click)="Connexion()" class="btn btnAjouter">Se Connecter</button>
         </form>
-  
+
       </div>
     </div>
   </div>
