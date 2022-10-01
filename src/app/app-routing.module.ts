@@ -66,7 +66,11 @@ const routes: Routes = [
   {
     path: 'profile-admin',
     loadChildren: () => import('./profile-admin/profile-admin.module').then( m => m.ProfileAdminPageModule)
+  },  {
+    path: 'salle',
+    loadChildren: () => import('./salle/salle.module').then( m => m.SallePageModule)
   },
+
 ];
 
 @NgModule({
