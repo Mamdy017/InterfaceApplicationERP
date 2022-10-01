@@ -3,13 +3,11 @@ import { ListePostulant } from "../liste-postulant/liste-postulant";
 import { Utilisateur } from "../utilisateur/utilisateur";
 
 export class Tirage {
-
-  id!: number;
-  LibelleTirage!: string;
+  libelleTirage!: string;
   nombrePostulantTire!: number;
-  date!: Date;
-  utilisateur!: Utilisateur;
-  listepostulant!: ListePostulant;
-  activite!:Activite;
+  //date!: Date;
+  //utilisateur!: Utilisateur;
+  //listepostulant!: ListePostulant;
+  //activite!:Activite;
 
 }

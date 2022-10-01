@@ -71,7 +71,7 @@ export class AuthentificationPage implements OnInit {
             }
             else {
               this.route.navigateByUrl('h');
-              console.log(this.erreur);             
+              console.log(data.contenu);             
             }
           }
         }
