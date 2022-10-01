@@ -17,7 +17,7 @@
         <div class="row">
           <!-- la premiere partie -->
           <div class="col-12 col-md-4 col-xs-6 py-3 text-center">
-            <form class="importContent">
+            <form class="importContent"  [formGroup]="formmodule" (ngSubmit)="importerliste()">
               <p>Importer un fichier</p>
 
               <div class="trait"></div>
@@ -25,15 +25,22 @@
 
 
               <div class=" mb-3 mt-3 bttn py-3">
-                <input type="libelle" class="form-control" id="libele" placeholder="libelle de la liste" name="libelle">
+                <input type="text" class="form-control" id="libele" placeholder="Libelle de la liste" name="libelleListe"  formControlName="libelleListe">
               </div>
 
-              <div class=" mb-3 mt-3 bttn py-3">
-                <input type="libelle" class="form-control" id="libele" placeholder="activite" name="libelle">
+          
+                <!--
+                    <div class="col-12 col-md-6 mb-3 mt-3">
+                <select class="form-select" name = "libelleAct" [(ngModel)]="libelleActivite" formControlName="libelleAct">
+                  <option selected>--Choisir Activité--</option>
+                  <option *ngFor="let listeActivite of listeActivites$" [(ngValue)] = "listeActivite.nom">{{listeActivite.nom}}</option>
+                </select>
               </div>
-
+                -->
+                
+              
               <div class=" mb-3 mt-3 bttn">
-                <input type="file" class="form-control" name="file" />
+                <input type="file" class="form-control" name="file" formControlName="file" (change)="fileChange($event)" />
               </div>
 
               <button type="submit" class="btne">Importer</button>
@@ -46,13 +53,14 @@
           <div class="col-12 col-md-6 col-xs-6 text-center ">
             <form class="tirageContent">
 
+
               <p>Faire Tirage</p>
 
               <div class="trait"></div><br>
               <div class="row">
                 <div class="col-12 col-md-6 mb-3 mt-4 ">
                   <input type="text" class="form-control" id="libele" placeholder="libelle du tirage"
-                    name="libelleTirage"  [(ngModel)]="libelleTirage">
+                    name="libelleTirage"  [(ngModel)] = "libelleTirage">
                 </div>
 
                 <div class="col-12 col-md-6 mb-3 mt-3  ">

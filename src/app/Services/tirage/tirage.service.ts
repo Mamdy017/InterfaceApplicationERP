@@ -19,4 +19,27 @@ export class TirageService {
 
     return this.http.post<Tirage>(`${this.api}/tirage/ajouter/${libelleListe}/${libelleActivite}`, tirage);
    }
+
+
+   addListe(libelleListe:string, libelleActivite:string, file:any):Observable<any>{
+      
+    let data = new FormData();
+
+      data.append("file", file);
+     
+
+
+      console.log("service: " + libelleListe)
+      console.log(libelleActivite)
+      console.log(`http://localhost:8080/postulant/import/excel/${libelleListe}/${libelleActivite}`, data)
+
+
+      if(file==null){
+        console.log("je suis nullllllllllllllllllll")
+      }
+
+      return this.http.post<any>(`http://localhost:8080/postulant/import/excel/${libelleListe}/${libelleActivite}`, data);
+   
+    }
+
 }
